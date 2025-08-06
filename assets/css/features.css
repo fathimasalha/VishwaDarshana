@@ -1,0 +1,44 @@
+/* Special Features Section */
+.features-section {
+    padding: 120px 0;
+    background: var(--pure-white);
+}
+
+.features-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 40px;
+    background: var(--gradient-soft);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box i {
+    font-size: 48px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-size: 24px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: var(--grey);
+    line-height: 1.6;
+}

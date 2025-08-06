@@ -1,0 +1,75 @@
+/* Welcome to Excellence Section */
+.excellence-section {
+    padding: 120px 0;
+    background: var(--gradient-soft);
+    position: relative;
+    overflow: hidden;
+}
+
+.excellence-bg {
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(214, 143, 65, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.stats-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 40px;
+    background: var(--pure-white);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+    font-size: 48px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.stat-count {
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 800;
+    margin-bottom: 10px;
+    display: inline-block;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-suffix {
+    font-size: 36px;
+    color: var(--orange);
+}
+
+.stat-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,111 @@
+/* =====================================================
+   MAIN WEBSITE CSS - style.css
+   File: assets/css/style.css
+   ===================================================== */
+
+
+/* style.css */
+@import url('header.css');
+@import url('footer.css');
+@import url('floating-button.css');
+@import url('hero.css');
+@import url('about.css');
+@import url('excellence.css');
+@import url('tomorrow.css');
+@import url('testimonials.css');
+@import url('features.css');
+@import url('marquee.css');
+@import url('programs.css');
+@import url('journey.css');
+@import url('updates.css');
+@import url('gallery.css');
+@import url('contact.css');
+@import url('central-school.css');
+
+
+/* CSS Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #0A2845;
+    --accent: #AF4D58;
+    --orange: #D68F41;
+    --cream: #F4EFE9;
+    --header-bg: #eaeaea;
+    --pure-white: #FFFFFF;
+    --grey: #666666;
+    --gradient-1: linear-gradient(135deg, #0A2845 0%, #AF4D58 100%);
+    --gradient-2: linear-gradient(135deg, #AF4D58 0%, #D68F41 100%);
+    --gradient-3: linear-gradient(135deg, #0A2845 0%, #AF4D58 50%, #D68F41 100%);
+    --gradient-soft: linear-gradient(135deg, rgba(10, 40, 69, 0.05) 0%, rgba(175, 77, 88, 0.05) 100%);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--cream);
+    color: var(--primary);
+    overflow-x: hidden;
+    position: relative;
+}
+
+ /* Cursor Trail Effect - Hide on mobile */
+ .cursor-trail {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(175, 77, 88, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: all 0.1s ease;
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .cursor-trail {
+        display: block;
+    }
+}
+
+/* Noise Texture */
+.noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.02;
+    z-index: 1;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBudW1PY3RhdmVzPSIxMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iMSIvPjwvc3ZnPg==');
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: var(--grey);
+}
+
+
+
+

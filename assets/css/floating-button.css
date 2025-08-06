@@ -1,0 +1,48 @@
+/* Floating Apply Button */
+.floating-apply {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pure-white);
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(175, 77, 88, 0.4);
+    z-index: 999;
+    transition: all 0.3s ease;
+    animation: floatButton 3s ease-in-out infinite;
+}
+
+@keyframes floatButton {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.floating-apply:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(175, 77, 88, 0.5);
+}
+
+.floating-apply-tooltip {
+    position: absolute;
+    right: 85px;
+    background: var(--primary);
+    color: var(--pure-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.floating-apply:hover .floating-apply-tooltip {
+    opacity: 1;
+}
